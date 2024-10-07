@@ -1,1 +1,7 @@
-/* место для вашего кода */
+
+.menu {
+    font-family: 'Raleway', sans-serif;
+    list-style: circle;
+    display: flex;
+    
+}
