@@ -185,6 +185,13 @@
     color: white;
 }
 
+.lots__look-more-link {
+    display: inline-block;
+    padding: 30px 0 0 40px; 
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .about {
     padding: 0 24px 180px;
 }
