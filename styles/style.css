@@ -1,12 +1,20 @@
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
 
 .header {
     display: flex;
     padding: 92px 24px 96px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header__menu {
+    margin: 44px 36px 39px 26.52px;
 }
 
 .header__link-list {
     display: flex;
-    margin: 44px 36px 39px 26.52px;
     gap: 13.48px;
     list-style: circle;
     list-style-position: inside;
@@ -14,6 +22,11 @@
 
 .header__links-list-item_no-bullit {
     list-style: none;
+}
+
+.header__link-list-item {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .header__logo {
@@ -26,44 +39,47 @@
     width: 100%;
 }
 
-/*.logo-black {
-    display: flex;
-    width: 124.05px;
-    height: 94.84px;
-    margin-left: 45.03px;
-}*/
-
 .contacts {
-    margin: 5px 25.48px 2px 184px;
+    margin: 5px 25.48px 2px 204px;
     overflow-wrap: break-word;
 }
 
 .cover {
-    height: 757px;
+    position: relative;
+    /*Проверка 
+    height: 757px;*/
     text-transform: uppercase;
     color: white;
     background-image: url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-position: right center;
-    background-color: rgb(0, 0, 0);
     background-size: cover;
-    /* Надо реализовать затемнение фона
-    background-blend-mode: saturation;
-    */
+    z-index: 1;
+}
+
+.cover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 0.5);
+    z-index: 2
 }
 
 .cover__title {
+    position: relative;
     padding: 165px 50px 135px;
     width: 100%;
     font-weight: 700;
     font-size: 100px;
     line-height: 1;
     letter-spacing: 0.3em;
+    z-index: 3;
 }
 
 .aligned-text {
     display: block;
     letter-spacing: 0.3em;
+    
 }
 
 .test1 {
@@ -93,7 +109,9 @@
 }
 
 .cover__description {
+    position: relative;
     padding: 62px 50px 51px 78px;
+    z-index: 3;
 }
 
 .cover__description-text {
@@ -122,7 +140,6 @@
 
 .lots__heading {
     margin: 0 0 0 40px;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
 }
@@ -139,8 +156,17 @@
 }
 
 .card_type_film {
+    position: relative;
     background-image: url("../images/card-lot-01.jpg");
     background-size: cover;
+}
+
+.card_type_film::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 0.5);
+    z-index: 2
 }
 
 .card_type_film .card__text {
@@ -152,37 +178,54 @@
 }
 
 .card_type_book {
+    position: relative;
     margin-left: 25px;
     margin-right: 25px;
     background-image: url("../images/card-lot-02.jpg");
     background-size: cover;
 }
 
+.card_type_book::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 0.5);
+    z-index: 2
+}
+
 .card_type_picture {
+    position: relative;
     background-image: url("../images/card-lot-03.jpg");
     background-size: cover;
 }
 
-.card {
-    
+.card_type_picture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 0.5);
+    z-index: 2
 }
 
 .card__title {
+    position: relative;
     margin: 51px 40px 0;
     font-weight: 700;
     font-size: 22px;
     text-decoration: underline;
     color: white;
-    text-transform: uppercase;
     line-height: 26.4px;
     text-align: left;
+    z-index: 3;
 }
 
 .card__text {
+    position: relative;
     margin: 0 40px 48px;
     font-weight: 400;
     font-size: 20px;
     color: white;
+    z-index: 3;
 }
 
 .lots__look-more-link {
@@ -194,8 +237,82 @@
 
 .about {
     padding: 0 24px 180px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 72px;
 }
 
+.about__logo {
+    margin: 35px 0 320px 47px;
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+    margin: 64px 45.52px 62px 46.48px;
+}
+
+.about__title {
+    margin-top: 136px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about__text {
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.about__text-top {letter-spacing: 0.01em;}
+
+.letter-space1 {letter-spacing: 0.02em;}
+
+.letter-space2 {letter-spacing: -0.01em;}
+
+.letter-space3 {letter-spacing: 0.03em;}
+
+.about__text-bottom {
+    margin-top: 24px;
+}
+
+.letter-space4 {letter-spacing: 0.04em;}
+
+.letter-space5 {letter-spacing: 0.01em;}
+
 .footer {
+    display: flex;
     padding: 0 50px 88px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer__contacts {
+    margin: 0 185.48px 0 0;
+}
+
+.footer__menu-list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer__menu-list-item {
+    
+}
+
+.footer__social-list {
+    display: flex;
+    
+    margin-left: 185px;
+    list-style: none;
+    gap: 48px;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
