@@ -261,11 +261,15 @@ h6 {
   font-size: 20px;
 }
 
-/*В фигме странные межбуквенные расстояния*/
-
 .about__text-top {
-  letter-spacing: 0.01em;
-}
+    letter-spacing: 0.01em;
+  }
+  
+.about__text-bottom {
+    margin-top: 24px;
+  }
+
+/*Попытка реализовать межбуквенные расстояния, как в макете фигмы*/
 
 .letter-space1 {
   letter-spacing: 0.02em;
@@ -279,10 +283,6 @@ h6 {
   letter-spacing: 0.03em;
 }
 
-.about__text-bottom {
-  margin-top: 24px;
-}
-
 .letter-space4 {
   letter-spacing: 0.04em;
 }
@@ -290,6 +290,8 @@ h6 {
 .letter-space5 {
   letter-spacing: 0.01em;
 }
+
+/*Конец попытки реализовать межбуквенные расстояния, как в макете фигмы*/
 
 .footer {
   display: flex;
