@@ -78,30 +78,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .aligned-text {
     display: block;
-    letter-spacing: 0.3em;
-    
-}
-
-.test1 {
-    letter-spacing: 0.6em;
 }
 
 .aligned-text_center {
     text-align: center;
-    letter-spacing: 0.3em;
-}
-
-.test2 {
-    letter-spacing: 0.6em;
 }
 
 .aligned-text_right {
     text-align: right;
-    letter-spacing: 0.6em;
 }
 
-.test3 {
-    letter-spacing: 0.3em;
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
 }
 
 .no-letter-space {
