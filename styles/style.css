@@ -47,6 +47,7 @@ h6 {
 .contacts {
   margin: 5px 25.48px 2px 204px;
   overflow-wrap: break-word;
+  font-style: normal;
 }
 
 .cover {
