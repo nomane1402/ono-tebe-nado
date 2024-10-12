@@ -7,19 +7,18 @@ h6 {
   text-transform: uppercase;
 }
 
-.header { 
+.header {
   display: flex; 
   padding: 92px 24px 91.875px; 
   font-weight: 400; 
   font-size: 18px;
   line-height: 21.13px;
-  
 } 
  
-.header__menu { 
+.header__menu {
   margin: 44px 0px 39px 26.52px; 
-} 
- 
+}
+
 .header__links-list {
   display: flex;
   list-style-type: circle;
@@ -39,21 +38,19 @@ h6 {
 
 .header__link_active {
   letter-spacing: normal;
-  
 }
 
-.header__logo { 
+.header__logo {
   display: block; 
   padding-left: 36px;
-} 
- 
-.header__logo-image { 
+}
+
+.header__logo-image {
   width: 148px; 
-  height: 105px; 
-  
-} 
- 
-.contacts { 
+  height: 105px;
+}
+
+.contacts {
   margin: 5px 25.48px 2px 184px; 
   overflow-wrap: break-word; 
   font-style: normal;
