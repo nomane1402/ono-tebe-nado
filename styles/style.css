@@ -8,15 +8,15 @@ h6 {
 }
 
 .header {
-  display: flex; 
-  padding: 92px 24px 91.875px; 
-  font-weight: 400; 
+  display: flex;
+  padding: 92px 24px 91.875px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21.13px;
 } 
  
 .header__menu {
-  margin: 44px 0px 39px 26.52px; 
+  margin: 44px 0px 39px 26.52px;
 }
 
 .header__links-list {
@@ -41,20 +41,20 @@ h6 {
 }
 
 .header__logo {
-  display: block; 
+  display: block;
   padding-left: 36px;
 }
 
 .header__logo-image {
-  width: 148px; 
+  width: 148px;
   height: 105px;
 }
 
 .contacts {
-  margin: 5px 25.48px 2px 184px; 
-  overflow-wrap: break-word; 
+  margin: 5px 25.48px 2px 184px;
+  overflow-wrap: break-word;
   font-style: normal;
-  line-height: 24.3px;  
+  line-height: 24.3px;
   letter-spacing: 0.01em;
 }
 
