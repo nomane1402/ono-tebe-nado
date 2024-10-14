@@ -134,6 +134,8 @@ h6 {
 
 .bet-button {
   display: flex;
+  height: 51px;
+  width: 256px;
   padding: 12px 32px 11px 31px;
   background-color: transparent;
   color: white;
