@@ -117,6 +117,7 @@ h6 {
 }
 
 .cover__description {
+  display: flex;
   position: relative;
   padding: 0 50px 51px 78px;
   z-index: 2;
@@ -124,15 +125,15 @@ h6 {
 }
 
 .cover__description-text {
-  display: inline-block;
-  margin: 12px 78px 11px 0;
+  display: flex;
+  margin: 12px 80px 11px 0;
   font-weight: 400;
   font-size: 22px;
   word-spacing: 18px;
 }
 
 .bet-button {
-  display: inline-block;
+  display: flex;
   padding: 12px 32px 11px 31px;
   background-color: transparent;
   color: white;
