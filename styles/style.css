@@ -120,6 +120,7 @@ h6 {
   position: relative;
   padding: 0 50px 51px 78px;
   z-index: 2;
+  flex-wrap: nowrap;
 }
 
 .cover__description-text {
